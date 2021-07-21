@@ -69,14 +69,17 @@ Here is the code for a single arg after converting:
 5. then it subtracts a third number, lets call it 'c'
 6. lastly it preforms abs operation on the result of 5 and adds to the counter 'em'
 
-we can represent this for all variables as this function
+we can represent this for all variables as this function:
+```python
 counter += abs(((a ^ -1) & b) | ((b ^ -1) & a) - c)
-so we need ((a ^ -1) & b) | ((b ^ -1) & a) - c to equal zero.
-We can see that mathematically ((a ^ -1) & b) | ((b ^ -1) & a) is the same as (a ^ b)
+```
+so we need ```((a ^ -1) & b) | ((b ^ -1) & a) - c``` to equal zero.
+We can see that mathematically ```((a ^ -1) & b) | ((b ^ -1) & a)``` is the same as ```a ^ b```
 so that means:
+```python
 counter += abs((a ^ b) - c)
-
-we need a ^ b to equal c so we know that a must be equal to b ^ c
+```
+we need a ^ b to equal c so we know that a must be equal to b ^ c (because xor is a linear operation)
 
 And now extracting all the b,c values we get this:
 
