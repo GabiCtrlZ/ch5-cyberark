@@ -72,8 +72,8 @@ Here is the code for a single arg after converting:
 we can represent this for all variables as this function
 counter += abs(((a ^ -1) & b) | ((b ^ -1) & a) - c)
 so we need ((a ^ -1) & b) | ((b ^ -1) & a) - c to equal zero.
-We can see that ((a ^ -1) & b) | ((b ^ -1) & a) is the same as a ^ b
-so 
+We can see that mathematically ((a ^ -1) & b) | ((b ^ -1) & a) is the same as (a ^ b)
+so that means:
 counter += abs((a ^ b) - c)
 
 we need a ^ b to equal c so we know that a must be equal to b ^ c
