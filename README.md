@@ -92,7 +92,7 @@ counter += abs((a ^ b) - c)
 ```
 because we need ```a ^ b``` to equal 'c', we know that 'a' must be equal to ```b ^ c``` (because xor is a linear operation)
 
-And now extracting all the b,c values we get this:
+And now extracting all the b,c (I've used some fancy VS code keyboard shortcuts to do that) values we get this:
 
 ![alt text](https://raw.githubusercontent.com/GabiCtrlZ/ch5-cyberark/main/pictures/values.png)
 
