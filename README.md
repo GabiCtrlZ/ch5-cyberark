@@ -92,7 +92,15 @@ print(''.join(ans))
 
 We get the flag! f0r_furth3r_1nf0_c411_033728185
 
-Or not?
+Or not? trying to enter this as the flag gives us an error? what?
+So I've decided to call the number 033728185 and received this message:
+'count down for landing 10cba9876543210 successful landing great job cadet! we understand you've found a message from extraterrestrial life,
+please send that important flag to us'
 
+I've remembered that in challenge number 2 we got a rust code and the flag was a extraterrestrial_msg! the flag there was 'What a lovely day'
+so I've tried to send that as the flag and failed again.
 
+So after banging my head against the wall, I've understood that the '10cba9876543210' in the recording from the phone must be a clue, so I took the 'What a lovely day' flag
+and tried to encode in in base13 (because '10cba9876543210' is counting in base13) resulting in '69 80 76 8c 26 76 26 84 87 91 7a 84 94 26 79 76 94'
 
+After entering this I've finally finished the challenge!
