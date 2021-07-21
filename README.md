@@ -17,7 +17,7 @@ Only now as I've entered the input I could see the debugger is being called, may
 Let's use the debugger and keep going!
 Looking at the next break point I could see more of the logic
 
-![alt text](https://raw.githubusercontent.com/GabiCtrlZ/ch5-cyberark/main/pictures/dev-tools.png)
+![alt text](https://raw.githubusercontent.com/GabiCtrlZ/ch5-cyberark/main/pictures/dev-tools-more.png)
 
 So the var 'answer' is our input.
 And the var 'a' is our input encoded.
