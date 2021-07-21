@@ -78,8 +78,21 @@ counter += abs((a ^ b) - c)
 
 we need a ^ b to equal c so we know that a must be equal to b ^ c
 
-and now extracting all the b,c values for each arg and preforming the xor operation on all of them we are left with the flag
+And now extracting all the b,c values we get this:
 
+![alt text](https://raw.githubusercontent.com/GabiCtrlZ/ch5-cyberark/main/pictures/values.png)
+
+And after running this code
+
+```python
+ans = [193 ^ 167, 32 ^ 16, 130 ^ 240, 192 ^ 159, 150 ^ 240, 52 ^ 65, 27 ^ 105, 69 ^ 49, 31 ^ 119, 63 ^ 12, 160 ^ 210, 51 ^ 108, 137 ^ 184, 133 ^ 235, 16 ^ 118, 4 ^ 52, 138 ^ 213, 102 ^ 5, 95 ^ 107, 91 ^ 106, 148 ^ 165, 83 ^ 12, 134 ^ 182, 239 ^ 220, 191 ^ 140, 162 ^ 149, 32 ^ 18, 144 ^ 168, 219 ^ 234, 149 ^ 173, 18 ^ 39]
+ans = [chr(a) for a in ans]
+print(''.join(ans))
+```
+
+We get the flag! f0r_furth3r_1nf0_c411_033728185
+
+Or not?
 
 
 
