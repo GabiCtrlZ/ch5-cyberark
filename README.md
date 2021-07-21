@@ -47,8 +47,8 @@ So the first part of the function is simply declaring the local variables and de
 
 ![alt text](https://raw.githubusercontent.com/GabiCtrlZ/ch5-cyberark/main/pictures/declaring-vars.png)
 
-the second part is a repetitive part that happens for each of the 31 args so I've determined that I can understand what happened with the first args<br/>
-and apply this logic for the reset.<br/>
+the second part is a repetitive part that happens for each of the 31 args<br/>
+So I've determined that I can understand what happened with the first args and apply this logic for the reset.<br/>
 
 There was this repetitive function:
 
